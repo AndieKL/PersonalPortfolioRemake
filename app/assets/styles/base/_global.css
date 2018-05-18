@@ -30,3 +30,7 @@ img {
 a {
 	color: $textGrey;
 }
+
+.dark-background {
+	background-color: $medGrey;
+}

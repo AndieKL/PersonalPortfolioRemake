@@ -1,36 +1,106 @@
 .page-section {
 	position: relative;
-	padding: 40px;
+	padding: 60px 60px 60px 130px;
 	
+	&__image {
+		margin: 0;
+		padding: 0;
+	}
+
 	&__header {
-		float: left;
+		position: absolute;
+		top: 0;
+		left: 35px;
 		border-radius: 2px;
 		text-align: right;
 		writing-mode: vertical-lr;
   		text-orientation: mixed;
   		text-transform: uppercase;
-		margin-top: 20px;
-		margin-right: 40px;
-		padding: 20px 15px 20px 10px;
+		padding: 0 15px 0 10px;
 		transform: rotate(180deg);
-		height: 350px;
-		background: linear-gradient(to bottom, $mainYellow, $medGrey);
+		height: 100%;
+		background: linear-gradient(to bottom, $lightGrey, $mainYellow, $lightGrey);
 	
-		h2 {
-			margin: 0;
-			padding: 0;
+		&--dark {
+			background: linear-gradient(to bottom, $medGrey, $mainYellow, $medGrey);
 		}
 
+		h2 {
+			margin: 0;
+			padding: 60px 0;
+		}
 	}
 
 	&__content {
+		margin: 0;
+		padding: 0;
 		font-size: 1.2rem;
 		line-height: 1.5;
 	}
 
 	&__list {
-		
+		font-size: 1.2rem;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		&__item {
+			padding: 5px 0;
+			margin: 0;
+
+			&::before {
+				font-family: arial, Segoe UI Symbol;
+				content: "\2713\0020";
+			}
+
+			&--one {
+				margin-bottom: 20px;
+				margin-left: 5%;
+				&::before {
+					content: "";
+				}
+			}
+
+			&--two {
+				margin-bottom: 20px;
+				margin-left: 15%;
+				&::before {
+					content: "";
+				}
+			}
+
+			&--three {
+				margin-bottom: 20px;
+				margin-left: 55%;
+				&::before {
+					content: "";
+				}
+			}
+
+			&--four {
+				margin-bottom: 20px;
+				&::before {
+					content: "";
+				}
+			}
+
+			&--five {
+				margin-bottom: 20px;
+				margin-left: 40%;
+				&::before {
+					content: "";
+				}
+			}
+
+			&--six {
+				margin-left: 10%;
+				&::before {
+					content: "";
+				}
+			}
+		}
 	}
+
 
 	@mixin clearfix;
 }

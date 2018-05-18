@@ -1,12 +1,18 @@
 .row {
+	display: flex;
+
+	&--large-top-margin {
+		margin-top: 50px;
+	}
 
 	&__col-2 {
-		
-		float: left;
-		width: 45%;
+		width: 50%;
+		margin: 0;
+		padding: 0;
 
 		h3 {
 			font-size: 1.4rem;
+			height: 40px;
 		}
 	}
 
