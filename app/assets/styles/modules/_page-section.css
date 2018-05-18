@@ -1,0 +1,36 @@
+.page-section {
+	position: relative;
+	padding: 40px;
+	
+	&__header {
+		float: left;
+		border-radius: 2px;
+		text-align: right;
+		writing-mode: vertical-lr;
+  		text-orientation: mixed;
+  		text-transform: uppercase;
+		margin-top: 20px;
+		margin-right: 40px;
+		padding: 20px 15px 20px 10px;
+		transform: rotate(180deg);
+		height: 350px;
+		background: linear-gradient(to bottom, $mainYellow, $medGrey);
+	
+		h2 {
+			margin: 0;
+			padding: 0;
+		}
+
+	}
+
+	&__content {
+		font-size: 1.2rem;
+		line-height: 1.5;
+	}
+
+	&__list {
+		
+	}
+
+	@mixin clearfix;
+}

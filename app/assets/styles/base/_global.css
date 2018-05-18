@@ -1,0 +1,32 @@
+@font-face {
+  font-family: aqua;
+  src: url(../../assets/images/font/aqua.ttf);
+}
+
+body {
+	color: $textGrey;
+	font-family: 'Muli', sans-serif;
+  	background-image: url("../../assets/images/cloth.png");
+    background-color: $lightGrey;
+}
+
+h1, h2 {
+	font-family: aqua;
+}
+
+h3 {
+	color: $mainBlue;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	color: $textGrey;
+}

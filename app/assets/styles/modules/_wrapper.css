@@ -1,0 +1,8 @@
+.wrapper {
+	background-color: $lightGrey;
+	max-width: 1236px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	padding-top: 150px;
+}

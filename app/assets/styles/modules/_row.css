@@ -1,0 +1,14 @@
+.row {
+
+	&__col-2 {
+		
+		float: left;
+		width: 45%;
+
+		h3 {
+			font-size: 1.4rem;
+		}
+	}
+
+	@mixin clearfix;
+}

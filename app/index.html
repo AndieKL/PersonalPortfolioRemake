@@ -8,6 +8,8 @@
   <meta name="author" content="Andie Lippingwell">
   <meta name="description" content="Andie is a Vancouver-based web developer.">
   <meta name="keywords" content="web development, web developer, application development, front-end, javascript, React">
+  <link href="https://fonts.googleapis.com/css?family=Muli:200,300,300i,400,400i" rel="stylesheet">
+  <link rel="stylesheet" href="temp/styles/styles.css">
 </head>
 
 
@@ -16,68 +18,77 @@
 
 
 	  	<div class="header">
-		    <div class="navBar"> 
-			    <div><a href="#skills">Skills</a></div>
-			    <div><a href="#portfolio">Portfolio</a></div>
-			    <div><a href="#contact">More</a></div>
+	  		<div class="header__logo">
+	      		<img class="header__logo__image" src="assets/images/lightning.png" alt="A lightning bolt illustration"/>
+	      		<div class="header__logo__content">
+	        		<h1>AndieKL</h1>
+	        		<h2>Web Developer</h2>
+	        	</div>
 		    </div>
-		  
-			<div class="btn">
+
+			<div class="btn btn--float-right">
 				<p>Connect</p>
 			</div>
 
-		    <div class="logo">
-		    	<img class="logo__image" src="assets/images/lightning.png" alt="A lightning bolt illustration"/>
-		      	<div class="logo__content">
-		        	<h1 class="logo__content__title">AndieKL</h1>
-		        	<h2 class="logo__content__subtitle">Web Developer</h2>
-		    	</div>
+		    <div class="header__navbar"> 
+			    <a href="#skills">Skills</a>
+			    <a href="#portfolio">Portfolio</a>
+			    <a href="#contact">More</a>
 		    </div>
 		</div> <!--end of header -->
 
 
 		<div class="hero">
 			<img class="hero__image" src="assets/images/vancouver.jpg" alt="Vancouver skyline at sunset"/>
-			<p class="hero__content">I'm a Vancouver-based web developer that pasionately embraces the never-stop-learning lifestyle.</p>
+			<div class="hero__overlay">
+				<div class="hero__overlay__content">
+					<p>I'm a Vancouver-based web developer</p>
+					<p>that passionately embraces the</p>
+					<p>never-stop-learning lifestyle.</p>
+				</div>
+			</div>
 		</div> <!--end of hero -->
 
 	      
 	    <div id="skills" class="page-section">
 			<div class="page-section__header">
-				<h2>skills</h2>
+				<h2>s k i l l s</h2>
 			</div>
+			
 
 		    <p class="page-section__content">My education includes a university certificate in general computer science through Athabasca University and web development certification through the British Columbia Institute of Technology (BCIT).</p>
 		   
-		    <div>
-		        <h3>Languages, Frameworks, Libraries, etc</h3>
-		        <ul class="page-section__list">
-			        <li>JavaScript</li>
-			        <li>PHP</li>
-			        <li>Java</li>
-			        <li>React.js</li>
-			        <li>HTML/HTML5/CSS/CSS3</li>
-			        <li>jQuery/jQuery Mobile (w/Ajax)</li>
-			        <li>SQL</li>
-			        <li>XML/JSON</li>
-			        <li>Adobe Photoshop</li>
-			        <li>Bootstrap</li>
-		        </ul>
-	      	</div>
-	      
-	        <div >
-	        	<h3>General Concepts & Systems Management</h3>
-	        	<ul class="page-section__list">
-	        		<li>Data structures and algorithms</li>
-	        		<li>Database management & development</li>
-	        		<li>Systems analysis and design</li>
-	        		<li>Responsive web design</li>
-	        		<li>Mobile web design</li>
-	        		<li>Web analytics & SEO</li>
-	        		<li>Operating systems and networking</li>
-	        		<li>Project management & human resources </li>
-	        	</ul>
-	    	</div>
+		   <div class="row">
+			    <div class="row__col-2">
+			        <h3>Languages, Libraries, Tools, etc</h3>
+			        <ul class="page-section__list">
+				        <li>JavaScript</li>
+				        <li>PHP</li>
+				        <li>Java</li>
+				        <li>React.js</li>
+				        <li>HTML/HTML5/CSS/CSS3</li>
+				        <li>jQuery/jQuery Mobile (w/Ajax)</li>
+				        <li>SQL</li>
+				        <li>XML/JSON</li>
+				        <li>Adobe Photoshop</li>
+				        <li>Bootstrap</li>
+			        </ul>
+		      	</div>
+		      
+		        <div class="row__col-2">
+		        	<h3>General Concepts & Systems Management</h3>
+		        	<ul class="page-section__list">
+		        		<li>Data structures and algorithms</li>
+		        		<li>Database management & development</li>
+		        		<li>Systems analysis and design</li>
+		        		<li>Responsive web design</li>
+		        		<li>Mobile web design</li>
+		        		<li>Web analytics & SEO</li>
+		        		<li>Operating systems and networking</li>
+		        		<li>Project management & human resources </li>
+		        	</ul>
+		    	</div>
+	    	</div> <!--end of row -->
 	    </div> <!--end of skills section -->
 
 
@@ -130,6 +141,7 @@
 
 		<div class="footer">
 			<img class="footer__image" src="assets/images/lightning.png" alt="A lightning bolt illustration"/>
+			<h2>Connect</h2>
 			<a class="footer__link" href="#" target="_blank"><img class="footer__link__image" src="assets/images/icons/github.png" alt="Link to GitHub account"/></a>
 			<a class="footer__link" href="#" target="_blank"><img class="footer__link__image" src="assets/images/icons/linked.png" alt="Link to LinkedIn profile"/></a>
 			<a class="footer__link" href="#" target="_blank"><img class="footer__link__image" src="assets/images/icons/twitter.png" alt="Link to Twitter account"/></a>
