@@ -561,6 +561,7 @@ a {
 	display: inline-block;
 	padding: 10px 15px 8px;
 	cursor: pointer;
+	margin-top: 20px;
 
 }
 
@@ -573,6 +574,15 @@ a {
 .btn--float-right {
 		margin-top: -10px;
 		float: right;
+	}
+
+.btn--blue {
+		background-color: #416E97;
+		color: #fff;
+	}
+
+.btn--extra-left-margin {
+		margin-left: 25px;
 	}
 
 .hero {
@@ -615,7 +625,7 @@ a {
 
 .page-section {
 	position: relative;
-	padding: 60px 60px 60px 130px;
+	padding: 80px 80px 80px 150px;
 }
 
 .page-section__image {
@@ -626,7 +636,7 @@ a {
 .page-section__header {
 		position: absolute;
 		top: 0;
-		left: 35px;
+		left: 45px;
 		border-radius: 2px;
 		text-align: right;
 		-webkit-writing-mode: vertical-lr;
@@ -744,6 +754,10 @@ a {
 		margin-top: 50px;
 	}
 
+.row__col-1 {
+		width: 33%;
+	}
+
 .row__col-2 {
 		width: 50%;
 		margin: 0;
@@ -755,6 +769,10 @@ a {
 			height: 40px;
 		}
 
+.row__col-3 {
+		width: 66%;
+	}
+
 .row::after {
 		content: "";
 		clear: both;
@@ -763,7 +781,7 @@ a {
 
 .sample {
 	padding: 0;
-	margin: 10px 25px 20px;
+	margin: 10px 50px 20px 0;
 	width: 100%;
 }
 
@@ -785,3 +803,23 @@ a {
 		clear: both;
 		display: table;
 	}
+
+.footer {
+	padding: 20px 0 20px 20px;
+}
+
+.footer__image {
+		float: left;
+		margin: 20px 0 0 20px;
+	}
+
+.footer__title {
+		margin: 60px 0 0;
+	}
+
+.footer__link__image {
+			width: 100px;
+			margin: 20px;
+			border: 5px solid #416E97;
+			border-radius: 2px;
+		}

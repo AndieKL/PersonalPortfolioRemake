@@ -5,6 +5,10 @@
 		margin-top: 50px;
 	}
 
+	&__col-1 {
+		width: 33%;
+	}
+
 	&__col-2 {
 		width: 50%;
 		margin: 0;
@@ -14,6 +18,10 @@
 			font-size: 1.4rem;
 			height: 40px;
 		}
+	}
+
+	&__col-3 {
+		width: 66%;
 	}
 
 	@mixin clearfix;

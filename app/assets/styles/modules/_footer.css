@@ -1,0 +1,23 @@
+.footer {
+	padding: 20px 0 20px 20px;
+
+	&__image {
+		float: left;
+		margin: 20px 0 0 20px;
+	}
+
+	&__title {
+		margin: 60px 0 0;
+	}
+
+	&__link {
+
+
+		&__image {
+			width: 100px;
+			margin: 20px;
+			border: 5px solid $mainBlue;
+			border-radius: 2px;
+		}
+	}
+}

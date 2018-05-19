@@ -1,6 +1,6 @@
 .page-section {
 	position: relative;
-	padding: 60px 60px 60px 130px;
+	padding: 80px 80px 80px 150px;
 	
 	&__image {
 		margin: 0;
@@ -10,7 +10,7 @@
 	&__header {
 		position: absolute;
 		top: 0;
-		left: 35px;
+		left: 45px;
 		border-radius: 2px;
 		text-align: right;
 		writing-mode: vertical-lr;
