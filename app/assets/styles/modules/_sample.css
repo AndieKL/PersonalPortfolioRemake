@@ -1,10 +1,30 @@
 .sample {
 	padding: 0;
-	margin: 10px 50px 20px 0;
-	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	width: 75%;
+	
+
+	@mixin atSmall {
+		margin-left: 5%;
+		margin-right: 5%;
+		width: 40%;
+		float: left;
+	}
+
+	@mixin atMedium {
+		margin-left: 0;
+		margin-right: 6%;
+		margin-bottom: 25px;
+		width: 27%;
+	}
 
 	&__link {
+
 		&__image {
+			display: block;
+			margin: 0 auto;
 			border: 1px solid #666;
 			border-radius: 2px;
 			box-shadow: 5px 5px 5px $textGrey;
@@ -15,7 +35,20 @@
 		font-style: italic;
 		padding: 7px;
 		margin: 0;
-	}
+		text-align: center;
 
+		@mixin atMedium {
+			min-height: 70px;
+		}
+
+		@mixin atSmall {
+			text-align: left;
+		}
+
+
+	}
+}
+
+.sample-container {
 	@mixin clearfix;
 }

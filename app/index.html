@@ -39,7 +39,10 @@
 
 
 		<div class="hero">
-			<img class="hero__image" src="assets/images/vancouver.jpg" alt="Vancouver skyline at sunset"/>
+			<picture>
+				<source srcset="assets/images/vancouverMedium.jpg" media="(min-width: 800px)">
+				<img class="hero__image" srcset="assets/images/vancouverSmall.jpg" alt="Vancouver skyline at sunset"/>
+			</picture>
 			<div class="hero__overlay">
 				<div class="hero__overlay__content">
 					<p>I'm a Vancouver-based web developer</p>
@@ -86,7 +89,7 @@
 		        		<li class="page-section__list__item">Operating systems and networking</li>
 		        		<li class="page-section__list__item">Project management &amp; human resources </li>
 		        	</ul>
-		        	<div class="btn btn--blue">
+		        	<div class="btn btn--blue btn--less-top-margin">
 						<p>Find Out More</p>
 					</div>
 		    	</div>
@@ -98,40 +101,38 @@
 	        <div class="page-section__header page-section__header--dark">
 				<h2>p o r t f o l i o</h2>
 			</div>
-			
-			<div class="row">
-		        <div class="sample">
-		        	<a class="sample__link" href="#" target="_blank"><img class="sample__link__image" src="assets/images/sample_twitch.jpg" alt="Example project using API"></a>
-		        	<p class="sample__description">Use of the Twitch.tv JSON API</p>
-		        </div>
+				<div class="sample-container">
+			        <div class="sample">
+			        	<a class="sample__link" href="#" target="_blank"><img class="sample__link__image" src="assets/images/sample_twitch.jpg" alt="Example project using API"></a>
+			        	<p class="sample__description">Use of the Twitch.tv JSON API</p>
+			        </div>
 
-		      	<div class="sample">
-		        	<a class="sample__link" href="#" target="_blank"><img class="sample__link__image" src="assets/images/sample_wiki.jpg" alt="Example project using API"></a>
-		        	<p class="sample__description">A Wikipedia viewer using Wikipedia's API</p>
-		        </div>
+			      	<div class="sample">
+			        	<a class="sample__link" href="#" target="_blank"><img class="sample__link__image" src="assets/images/sample_wiki.jpg" alt="Example project using API"></a>
+			        	<p class="sample__description">A Wikipedia viewer using Wikipedia's API</p>
+			        </div>
 
-		        <div class="sample">
-		        	<a class="sample__link" href="#" target="_blank"><img class="sample__link__image" src="assets/images/sample_calc.jpg" alt="A JavaScript calculator"></a>
-		        	<p class="sample__description">A JavaScript Calculater</p>
-		        </div>
-		    </div>
+			        <div class="sample">
+			        	<a class="sample__link" href="#" target="_blank"><img class="sample__link__image" src="assets/images/sample_calc.jpg" alt="A JavaScript calculator"></a>
+			        	<p class="sample__description">A JavaScript Calculater</p>
+			        </div>
+			  
+			        <div class="sample">
+			        	<a class="sample__link" href="#" target="_blank"><img class="sample__link__image" src="assets/images/sample_pomo.jpg" alt="A Pomodoro timer"></a>
+			        	<p class="sample__description">A Pomodoro timer - work in progress</p>
+			        </div>
 
-			<div class="row">
-		        <div class="sample">
-		        	<a class="sample__link" href="#" target="_blank"><img class="sample__link__image" src="assets/images/sample_pomo.jpg" alt="A Pomodoro timer"></a>
-		        	<p class="sample__description">A Pomodoro timer - work in progress</p>
-		        </div>
+			        <div class="sample">
+			        	<a class="sample__link" href="#" target="_blank"><img class="sample__link__image" src="assets/images/sample_travel.jpg" alt="Travel agent's website"></a>
+			        	<p class="sample__description">A travel agent's site using modern tools: Node.js, npm, gulp, webpack (Brad Schiff course)</p>
+			        </div>
 
-		        <div class="sample">
-		        	<a class="sample__link" href="#" target="_blank"><img class="sample__link__image" src="assets/images/sample_travel.jpg" alt="Travel agent's website"></a>
-		        	<p class="sample__description">A travel agent's site using modern tools: Node.js, npm, gulp, webpack (Brad Schiff course)</p>
+			        <div class="sample">
+			        	<a class="sample__link" href="#" target="_blank"><img class="sample__link__image" src="assets/images/sample_catch.jpg" alt="Catch of the Day seafood supply website"></a>
+			        	<p class="sample__description">Catch of the Day! Built using React.js (Wes Bos course)</p>
+			        </div>
 		        </div>
-
-		        <div class="sample">
-		        	<a class="sample__link" href="#" target="_blank"><img class="sample__link__image" src="assets/images/sample_catch.jpg" alt="Catch of the Day seafood supply website"></a>
-		        	<p class="sample__description">Catch of the Day! Built using React.js (Wes Bos course)</p>
-		        </div>
-	        </div>
+	
 	        <p class="page-section__content">Visit my GitHub account to find some of my source code and my works in progress.</p>
 	        <div class="btn">
 				<p>View My Code</p>
@@ -148,7 +149,7 @@
 
 			<div class="row row--large-top-margin">
 				<div class="row__col-2">
-					<ul class="page-section__list page-section__list--no-bullet">
+					<ul class="page-section__list page-section__list--centered">
 						<li class="page-section__list__item page-section__list__item--one">a struggling runner,</li>
 						<li class="page-section__list__item page-section__list__item--two">an experimental cook,</li>
 						<li class="page-section__list__item page-section__list__item--three">a dog lover,</li>

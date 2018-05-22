@@ -1,5 +1,5 @@
 @define-mixin atSmall {
-	@media (min-width: 530px) {
+	@media (min-width: 475px) {
 		@mixin-content;
 	}
 }
@@ -22,4 +22,4 @@
 		clear: both;
 		display: table;
 	}
-}
+} 

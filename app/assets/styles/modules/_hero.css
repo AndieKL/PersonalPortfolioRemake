@@ -1,6 +1,5 @@
 .hero {
 	position: relative;
-	text-align: right;
 
 	&__image {
 		display: block;
@@ -16,22 +15,31 @@
 	
 		&__content {
 			position: absolute;
-			top: 50%;
-			right: 200px;
-			margin-top: -75px;
-			
+			top: 25%;
+			right: 5%;
+			text-align: right;	
 			font-weight: 200;
-			font-size: 1.7rem;
 			color: #fff;
 			
 			p {
-				margin: 15px 0;
+				margin: 5px 0;
 				padding: 0;
+
+				@mixin atMedium {
+					margin: 15px 0;
+				}
+			}
+
+			@mixin atSmall  {
+					font-size: 1.5rem;
+				}
+
+			@mixin atMedium {
+				top: 50%;
+				right: 20%;
+				font-size: 1.7rem;
+				margin-top: -75px;
 			}
 		}
 	}
-
-
-
-
 }
