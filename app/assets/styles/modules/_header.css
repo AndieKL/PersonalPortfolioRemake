@@ -1,5 +1,5 @@
 .header {
-	/*position: fixed;*/
+	position: fixed;
 	top: 0;
 	max-width: 1236px;
 	margin-right: auto;
@@ -25,6 +25,7 @@
 		position: absolute;
 		top: 20px;
 		left: 50px;
+		transform: scale(.75);
 
 		&__image {
 			float: left;
@@ -46,6 +47,10 @@
 				margin: 0 0;
 				padding: 0 0;
 			}
+		}
+
+		@mixin atMedium {
+			transform: scale(1);
 		}
 	}
 	
