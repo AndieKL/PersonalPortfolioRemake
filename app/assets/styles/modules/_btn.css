@@ -18,8 +18,17 @@
 	}
 
 	&--float-right {
-		margin-top: -10px;
-		float: right;
+		margin-bottom: 10px;
+		transform: scale(.85);
+
+		@mixin atSmall {
+			transform: scale(1);
+		}
+
+		@mixin atMedium {
+			margin-top: -10px;
+			float: right;
+		}
 	}
 
 	&--blue {
