@@ -1,0 +1,34 @@
+.quote {
+	padding: 10px;
+
+	&__content {
+		max-width: 500px;
+		padding: 0;
+		margin: 0 auto;
+
+		&__border {
+			margin: 20px 0 15px;
+			height: 4px;
+			background: linear-gradient(to right, $medGrey, $mainBlue, $medGrey);
+		}
+
+		&__quote {
+			padding: 0 15px;
+			line-height: 1.5;
+			font-style: italic;
+		}
+
+		&__author {
+			padding: 0 15px;
+			text-align: right;
+
+			&::before {
+				content: "- ";
+			}
+		}
+	}
+
+	&__buttons {
+		text-align: center;
+	}
+}

@@ -1,0 +1,90 @@
+.modal {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 5;
+	padding-top: 15px;
+	background-color: rgba($medGrey, .95);
+	text-align: center;
+	opacity: 0;
+	visibility: hidden;
+	transform: scale(.8);
+	transition: all .4s ease-out;
+
+	&__inner {
+		@mixin atMedium {
+			position: absolute;
+			width: 100%;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
+	&--is-visible {
+		visibility: visible;
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	&__title {
+		display: flex;
+		width: 300px;
+		text-align: center;
+		margin: 0;
+		margin-left: auto;
+		margin-right: auto;
+		transform: scale(.9);
+		transition: transform .4s ease-out;
+
+		@mixin atSmall {
+			transform: scale(1);
+		}
+	
+		h2 {
+			margin: 0;
+			padding-top: 40px;
+			font-size: 1.4rem;
+		}
+	}
+
+	& p {
+		max-width: 450px;
+		margin: 20px auto 30px;
+		padding: 0 5px;
+		font-size: 1.2rem;
+		line-height: 1.3;
+
+		@mixin atMedium {
+			line-height: 1.5;
+		}
+	}
+
+	&__link {
+		&__image {
+			width: 75px;
+			margin: 15px 8px 0;
+			border: 4px solid $mainBlue;
+			background-color: $mainBlue;
+			border-radius: 2px;
+		}
+	}
+
+	&__close {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		font-size: 1.6rem;
+		transform: scaleX(1.1);
+		transform-origin: 100% 0;
+		font-weight: 600;
+		color: $mainBlue;
+		transition: color .1s ease-out;
+
+		&:hover{
+			color: $mainYellow;
+			cursor: pointer;
+		}
+	}
+}

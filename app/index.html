@@ -31,7 +31,7 @@
 			</div>
 
 			<div class="header__menu-content">
-				<div class="btn btn--float-right">
+				<div class="btn btn--float-right open-modal">
 					<p>Connect</p>
 				</div>
 
@@ -96,8 +96,8 @@
 		        		<li class="page-section__list__item">Operating systems and networking</li>
 		        		<li class="page-section__list__item">Project management &amp; human resources </li>
 		        	</ul>
-		        	<div class="btn btn--blue btn--less-top-margin">
-						<p>Find Out More</p>
+		        	<div class="btn btn--blue btn--less-top-margin open-modal">
+						<p>Connect With Me</p>
 					</div>
 		    	</div>
 	    	</div> <!--end of row -->
@@ -141,8 +141,8 @@
 		        </div>
 	
 	        <p class="page-section__content">Visit my GitHub account to find some of my source code and my works in progress.</p>
-	        <div class="btn">
-				<p>View My Code</p>
+	        <div class="btn open-modal">
+				<p>Find Out More</p>
 			</div>
 	    </div> <!--end of work section -->
 
@@ -173,31 +173,37 @@
 		</div><!--end of more section -->
 
 
-		<div class="footer dark-background">
-			<div class="footer__title">
-				<img class="footer__title__image" src="assets/images/lightning.png" alt="A lightning bolt illustration"/>
-				<h2>Connect With Me</h2>
+		<div class="modal dark-background">
+			<div class="modal__inner">
+				<div class="modal__title">
+					<img class="modal__title__image" src="assets/images/lightning.png" alt="A lightning bolt illustration"/>
+					<h2>Connect With Me</h2>
+				</div>
+				<p>Find me on LinkedIn, follow me on Twitter, view my code on GitHub, or even better - download my resume and contact me for an interview.</p>
+				<a class="modal__link" href="#" target="_blank"><img class="modal__link__image" src="assets/images/icons/github.png" alt="Link to GitHub account"/></a>
+				<a class="modal__link" href="#" target="_blank"><img class="modal__link__image" src="assets/images/icons/linked.png" alt="Link to LinkedIn profile"/></a>
+				<a class="modal__link" href="#" target="_blank"><img class="modal__link__image" src="assets/images/icons/twitter.png" alt="Link to Twitter account"/></a>
+				<a class="modal__link" href="#" target="_blank"><img class="modal__link__image" src="assets/images/icons/resume.png" alt="Downloadable resume"/></a>
 			</div>
-
-			<a class="footer__link" href="#" target="_blank"><img class="footer__link__image" src="assets/images/icons/github.png" alt="Link to GitHub account"/></a>
-			<a class="footer__link" href="#" target="_blank"><img class="footer__link__image" src="assets/images/icons/linked.png" alt="Link to LinkedIn profile"/></a>
-			<a class="footer__link" href="#" target="_blank"><img class="footer__link__image" src="assets/images/icons/twitter.png" alt="Link to Twitter account"/></a>
-			<a class="footer__link" href="#" target="_blank"><img class="footer__link__image" src="assets/images/icons/resume.png" alt="Downloadable resume"/></a>
-		</div> <!--end of footer -->
+			<div class="modal__close">X</div>
+		</div> <!--end of modal -->
 
 
- <!--needs a rewrite to be included in refactored site - remember to get a better tweet image!! -->
- 	<!--   
-    <div class="randomQuote">
-        <div>
-	        <blockquote id="quote" class="blockquote">
-		        <p> I am more than ever now the bride of science. Religion to me is science, and science is religion.</p>
-		        <footer>Ada Lovelace</footer>
-	        </blockquote>
-	        <button id="newQuote">New Quote</button>
-	        <a id="tweet" target="_blank" href="https://twitter.com/intent/tweet?text=I am more than ever now the bride of science. Religion to me is science, and science is religion. - Ada Lovelace" data-size="large"><img src="images/tweet.png" height="33"></a>
-        </div>
-    </div> end random quote machine -->
+ 
+	    <div class="quote dark-background">
+	    	
+	        <div class="quote__content">
+	        	<div class="quote__content__border"></div>
+		        <p class="quote__content__quote"> I am more than ever now the bride of science. Religion to me is science, and science is religion.</p>
+		        <p class="quote__content__author">Ada Lovelace</p>
+				<div class="quote__content__border"></div>
+			</div>
+			
+			<div class="quote__buttons">
+			    <div id="quote" class="btn btn--font">New Quote</div> 
+			    <a class="btn btn--blue btn--font" id="tweet" target="_blank" href="https://twitter.com/intent/tweet?text=I am more than ever now the bride of science. Religion to me is science, and science is religion. - Ada Lovelace" data-size="large">Tweet</a>
+		    </div>
+	    </div> <!--end random quote machine -->
   
     </div><!-- end of wrapper-->
 
