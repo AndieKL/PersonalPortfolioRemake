@@ -11816,15 +11816,25 @@ var RandomQuote = function () {
   }, {
     key: 'getNewQuote',
     value: function getNewQuote() {
-      _jquery2.default.ajax({
-        type: "GET",
-        url: "http://quotes.stormconsultancy.co.uk/random.json",
-        success: function success(json) {
-          (0, _jquery2.default)('.quote__content__quote').text(json.quote);
-          (0, _jquery2.default)('.quote__content__author').text(json.author);
-          (0, _jquery2.default)('#tweet').attr('href', 'https://twitter.com/intent/tweet?text=' + json.quote + " - " + json.author);
-        }
-      });
+      var notWorkAppropriate = false;
+      do {
+        notWorkAppropriate = false;
+        _jquery2.default.ajax({
+          type: "GET",
+          url: "http://quotes.stormconsultancy.co.uk/random.json",
+          success: function success(json) {
+            if (json.quote.includes('sex')) {
+              console.log('not work appropriate');
+              notWorkAppropriate = true;
+              console.log(notWorkAppropriate);
+            } else {
+              (0, _jquery2.default)('.quote__content__quote').text(json.quote);
+              (0, _jquery2.default)('.quote__content__author').text(json.author);
+              (0, _jquery2.default)('#tweet').attr('href', 'https://twitter.com/intent/tweet?text=' + json.quote + " - " + json.author);
+            }
+          }
+        });
+      } while (notWorkAppropriate);
     }
   }]);
 
