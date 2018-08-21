@@ -11824,9 +11824,8 @@ var RandomQuote = function () {
           url: "http://quotes.stormconsultancy.co.uk/random.json",
           success: function success(json) {
             if (json.quote.includes('sex')) {
-              console.log('not work appropriate');
+              console.log('Quote not work appropriate');
               notWorkAppropriate = true;
-              console.log(notWorkAppropriate);
             } else {
               (0, _jquery2.default)('.quote__content__quote').text(json.quote);
               (0, _jquery2.default)('.quote__content__author').text(json.author);

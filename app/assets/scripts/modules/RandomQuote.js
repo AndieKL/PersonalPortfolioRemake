@@ -20,9 +20,8 @@ class RandomQuote {
         url: "http://quotes.stormconsultancy.co.uk/random.json",
         success: function(json) {
           if (json.quote.includes('sex')) {
-            console.log('not work appropriate');
+            console.log('Quote not work appropriate');
             notWorkAppropriate = true;
-            console.log(notWorkAppropriate);
           }
           else {
             $('.quote__content__quote').text(json.quote);

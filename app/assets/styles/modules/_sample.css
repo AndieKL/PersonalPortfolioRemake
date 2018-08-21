@@ -26,9 +26,17 @@
 			display: block;
 			margin: 0 auto;
 			border: 1px solid #666;
-			border-radius: 2px;
+			border-radius: 50%;
 			box-shadow: 5px 5px 5px $textGrey;
+			transition: all .4s ease;
+
+			&:hover {
+				box-shadow: 0 0 15px #fff;
+				border: 1px solid #fff;
+			}
 		}
+
+
 	}
 
 	&__description {
