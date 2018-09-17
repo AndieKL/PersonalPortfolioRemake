@@ -1327,6 +1327,7 @@ a.btn {
 	        transform: scale(.8);
 	-webkit-transition: all .4s ease-out;
 	transition: all .4s ease-out;
+
 }
 
 @media (min-width: 800px) {
@@ -1378,18 +1379,22 @@ a.btn {
 			font-size: 1.4rem;
 		}
 
-.modal p {
+.modal__text {
 		max-width: 450px;
 		margin: 20px auto 30px;
 		padding: 0 5px;
 		font-size: 1.2rem;
 		line-height: 1.3;
+
+		
 	}
 
 @media (min-width: 800px) {
 
-.modal p {
+.modal__text {
 			line-height: 1.5
+
+		
 	}
 	}
 
@@ -1420,6 +1425,22 @@ a.btn {
 			color: #FFC000;
 			cursor: pointer;
 		}
+
+.modal .video-text {
+		margin: 40px auto 10px;
+		padding: 0 5px;
+	}
+
+.modal__video-buttontext {
+		margin: 0;
+		padding: 5px;
+	}
+
+.modal__video-button {
+		margin: 0;
+		padding: 13px 10px 10px;
+		border: none;
+	}
 
 .reveal-item {
 	opacity: 0;
@@ -1470,3 +1491,87 @@ a.btn {
 .quote__buttons {
 		text-align: center;
 	}
+
+.video {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 5;
+	padding: 0;
+	margin: 0;
+	background-color: rgba(208,206,206, .95);
+	text-align: center;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transform: scale(.8);
+	        transform: scale(.8);
+	-webkit-transition: all .4s ease-out;
+	transition: all .4s ease-out;
+
+}
+
+@media (min-width: 800px) {
+
+.video {
+			width: 289px;
+			height: 498px;
+			top: 50%;
+			margin-top: -249px;
+			left: 50%;
+			margin-left: -144px;
+			border: 10px solid #416E97
+
+}
+	}
+
+.video__inner {
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		        transform: translateY(-50%);
+
+	}
+
+@media (min-width: 800px) {
+
+.video__inner {
+			width: 269px;
+			height: 478px
+
+	}
+
+			.video__inner video {
+				padding: 0;
+				margin: 0 auto;
+			}
+	}
+
+.video--is-visible {
+		visibility: visible;
+		opacity: 1;
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+
+.video__close {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		font-size: 1.6rem;
+		-webkit-transform: scaleX(1.1);
+		        transform: scaleX(1.1);
+		-webkit-transform-origin: 100% 0;
+		        transform-origin: 100% 0;
+		font-weight: 600;
+		color: #FFC000;
+		-webkit-transition: color .1s ease-out;
+		transition: color .1s ease-out;
+	}
+
+.video__close:hover{
+			color: #F2F2F2;
+			cursor: pointer;
+		}

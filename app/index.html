@@ -8,7 +8,10 @@
   <meta name="author" content="Andie Lippingwell">
   <meta name="description" content="Andie is a Vancouver-based web developer.">
   <meta name="keywords" content="web development, web developer, application development, front-end, javascript, React">
+
+   <!--font for headers-->
   <link href="https://fonts.googleapis.com/css?family=Muli:200,300,300i,400,400i" rel="stylesheet">
+
   <!-- build:css assets/styles/styles.css -->
   	<link rel="stylesheet" href="/temp/styles/styles.css">
   <!-- endbuild -->
@@ -80,11 +83,10 @@
 			        <ul class="page-section__list">
 				        <li class="page-section__list__item">JavaScript</li>
 				        <li class="page-section__list__item">PHP</li>
-				        <li class="page-section__list__item">Python</li>
 				        <li class="page-section__list__item">Java</li>
 				        <li class="page-section__list__item">React.js/Redux</li>
 				        <li class="page-section__list__item">NPM/Webpack/Gulp</li>
-				        <li class="page-section__list__item">HTML/HTML5/CSS/CSS3/Bootstrap/PostCSS</li>
+				        <li class="page-section__list__item">HTML/HTML5/ CSS/CSS3/ Bootstrap/PostCSS</li>
 				        <li class="page-section__list__item">jQuery/jQuery Mobile (w/Ajax)</li>
 				        <li class="page-section__list__item">SQL</li>
 				        <li class="page-section__list__item">XML/JSON</li>
@@ -197,6 +199,7 @@
 			<div class="btn btn--blue btn--less-top-margin btn--centered open-modal">
 				<p>Connect With Me</p>
 			</div>
+			
 		</div><!--end of more section -->
 
 
@@ -206,16 +209,29 @@
 					<img class="modal__title__image" src="assets/images/lightning.png" alt="A lightning bolt illustration"/>
 					<h2>Connect With Me</h2>
 				</div>
-				<p>Find me on LinkedIn, follow me on Twitter, view my code on GitHub, or even better - download my resume and contact me for an interview.</p>
+				<p class="modal__text">Find me on LinkedIn, follow me on Twitter, view my code on GitHub, or even better - download my resume and contact me for an interview.</p>
 				<a class="modal__link" href="https://github.com/AndieKL" target="_blank"><img class="modal__link__image" src="assets/images/icons/github.png" alt="Link to GitHub account"/></a>
 				<a class="modal__link" href="https://www.linkedin.com/in/andie-lippingwell/" target="_blank"><img class="modal__link__image" src="assets/images/icons/linked.png" alt="Link to LinkedIn profile"/></a>
 				<a class="modal__link" href="https://twitter.com/andiesMoonCode" target="_blank"><img class="modal__link__image" src="assets/images/icons/twitter.png" alt="Link to Twitter account"/></a>
 				<a class="modal__link" href="AndieKLresume2018.pdf" target="_blank"><img class="modal__link__image" src="assets/images/icons/resume.png" alt="Downloadable resume"/></a>
+
+				<p class="modal__text video-text">Got 70 seconds? Hear about me - from me...</p>
+				<div class="btn btn--blue btn--centered modal__video-button open-video">
+					<p class="modal__video-buttontext">Click for Video</p>
+				</div>
 			</div>
 			<div class="modal__close">X</div>
 		</div> <!--end of modal -->
 
-
+		<div class="video dark-background">
+			<div class="video__inner">
+				<video oncontextmenu="return false;" width="269" height="479" controls>
+				    <source src="assets/video/meetAndie_min.mp4" type="video/mp4">
+				    Your browser does not support the video tag.
+				</video>
+			</div>
+			<div class="video__close">X</div>
+		</div> <!--end of video -->
  
 	    <div class="quote dark-background">
 	    	

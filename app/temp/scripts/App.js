@@ -11113,7 +11113,11 @@ var _Modal = __webpack_require__(7);
 
 var _Modal2 = _interopRequireDefault(_Modal);
 
-var _RandomQuote = __webpack_require__(8);
+var _Video = __webpack_require__(8);
+
+var _Video2 = _interopRequireDefault(_Video);
+
+var _RandomQuote = __webpack_require__(9);
 
 var _RandomQuote2 = _interopRequireDefault(_RandomQuote);
 
@@ -11124,6 +11128,7 @@ new _RevealOnScroll2.default((0, _jquery2.default)(".sample"), "85%");
 new _RevealOnScroll2.default((0, _jquery2.default)(".page-section__list__item--reveal"), "75%");
 var stickyHeader = new _StickyHeader2.default();
 var modal = new _Modal2.default();
+var videoPop = new _Video2.default();
 var randomQuote = new _RandomQuote2.default();
 
 /***/ }),
@@ -11780,6 +11785,69 @@ exports.default = Modal;
 
 /***/ }),
 /* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var VideoPop = function () {
+	function VideoPop() {
+		_classCallCheck(this, VideoPop);
+
+		this.openVideoButton = (0, _jquery2.default)('.open-video');
+		this.video = (0, _jquery2.default)('.video');
+		this.closeVideoButton = (0, _jquery2.default)('.video__close');
+		this.events();
+	}
+
+	_createClass(VideoPop, [{
+		key: 'events',
+		value: function events() {
+			this.openVideoButton.click(this.openVideo.bind(this));
+			this.closeVideoButton.click(this.closeVideo.bind(this));
+			(0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+		}
+	}, {
+		key: 'keyPressHandler',
+		value: function keyPressHandler(e) {
+			if (e.keyCode == 27) {
+				this.closeVideo();
+			}
+		}
+	}, {
+		key: 'openVideo',
+		value: function openVideo() {
+			this.video.addClass('video--is-visible');
+			return false;
+		}
+	}, {
+		key: 'closeVideo',
+		value: function closeVideo() {
+			this.video.removeClass('video--is-visible');
+		}
+	}]);
+
+	return VideoPop;
+}();
+
+exports.default = VideoPop;
+
+/***/ }),
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
