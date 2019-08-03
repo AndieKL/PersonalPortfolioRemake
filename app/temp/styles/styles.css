@@ -728,7 +728,7 @@ a {
 
 .header__logo__content {
 			float: right;
-			text-align: right;
+			text-align: left;
 			padding-top: 13px;
 			margin-left: -15px;
 		}
@@ -742,6 +742,7 @@ a {
 .header__logo__content h2 {
 				font-size: 1.6rem;
 				margin: 0 0;
+				margin-left: 5px;
 				padding: 0 0;
 			}
 
@@ -1265,7 +1266,6 @@ a.btn {
 			display: block;
 			margin: 0 auto;
 			border: 1px solid #666;
-			border-radius: 50%;
 			-webkit-box-shadow: 5px 5px 5px #404040;
 			        box-shadow: 5px 5px 5px #404040;
 			-webkit-transition: all .4s ease;

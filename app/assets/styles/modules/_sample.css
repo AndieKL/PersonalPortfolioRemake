@@ -26,7 +26,6 @@
 			display: block;
 			margin: 0 auto;
 			border: 1px solid #666;
-			border-radius: 50%;
 			box-shadow: 5px 5px 5px $textGrey;
 			transition: all .4s ease;
 
